@@ -44,3 +44,7 @@ export PATH="$HOME/Library/Python/3.6/bin:$PATH"
 [ -f /Users/hikaru/.travis/travis.sh ] && source /Users/hikaru/.travis/travis.sh
 export NVM_DIR="$HOME/.nvm"
 source "/usr/local/opt/nvm/nvm.sh"
+
+function peco-nvim {
+    nvim "$( find $1 | peco )"
+}
