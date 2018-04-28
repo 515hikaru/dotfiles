@@ -1,4 +1,4 @@
 [alias]
 	cpush = !git push origin `git rev-parse --abbrev-ref HEAD`
-
+	st    = !git status
 # vim: ft=gitconfig
