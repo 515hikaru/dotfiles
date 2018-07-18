@@ -49,6 +49,22 @@
 ;;; open junk file
 (require 'open-junk-file)
 (global-set-key "\C-xj" 'open-junk-file)
+;;; helm
+(require 'helm-config)
+(global-set-key (kbd "C-x C-f") 'helm-for-files)
+;;; auto-complete
+(when (require 'auto-complete-config nil t)
+  (define-key ac-mode-map (kbd "M-TAB") 'auto-complete)
+  (ac-config-default)
+  (setq ac-use-menu-map t)
+  (setq ac-ignore-case nil))
+;;; python
+(require 'jedi)
+(require 'epc)
+(require 'python)
+(setenv "PYTHONPATH" "/Users/hikaru/miniconda3/lib/python3.6/site-packages")
+(add-hook 'python-mode-hook 'jedi:setup)
+(setq jedi:complete-on-dot t)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -59,7 +75,7 @@
     ("78496062ff095da640c6bb59711973c7c66f392e3ac0127e611221d541850de2" default)))
  '(package-selected-packages
    (quote
-    (atom-dark-theme open-junk-file atom-one-dark-theme exec-path-from-shell))))
+    (jedi auto-complete helm atom-dark-theme open-junk-file atom-one-dark-theme exec-path-from-shell))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

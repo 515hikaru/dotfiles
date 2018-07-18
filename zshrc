@@ -20,6 +20,8 @@ bindkey -e
 autoload -U promptinit
 promptinit
 prompt fire red magenta blue white white white
+# alias
+alias emacs='emacs -nw'
 # Zplug
 export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
