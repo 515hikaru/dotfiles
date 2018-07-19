@@ -111,3 +111,22 @@ autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 [[plugins]]
 repo = 'fatih/vim-go'
 on_ft = 'go'
+
+[[plugins]]
+repo = 'rust-lang/rust.vim'
+on_ft = 'rust'
+hook_source = '''
+let g:rustfmt_autosave = 1
+'''
+
+[[plugins]]
+repo = 'racer-rust/vim-racer'
+on_i = 1
+on_ft = 'rust'
+depends = ['deoplete.nvim']
+hook_source = '''
+    " racerバイナリ指定
+    let g:racer_cmd = "~/.cargo/bin/racer"
+    " rust本体のソースコードパス指定
+    let $RUST_SRC_PATH="/Users/hikaru/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src"
+'''
