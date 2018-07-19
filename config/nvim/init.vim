@@ -76,7 +76,7 @@ autocmd FileType ruby setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 
 " python {{{
 let g:python_host_prog = '/usr/bin/python2'
-let g:python3_host_prog = '/usr/local/bin/python3'
+let g:python3_host_prog = $HOME . '/miniconda3/bin/python3'
 autocmd FileType python setlocal runtimepath+=/home/hikaru515/.config/nvim/ftplugin
 autocmd FileType python nnoremap <leader>y :0,$!yapf<Cr>
 autocmd CompleteDone * pclose " To close preview window of deoplete automagically

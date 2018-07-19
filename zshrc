@@ -53,3 +53,5 @@ function peco-nvim {
 
 export PATH="$HOME/miniconda3/bin:$PATH"
 . $HOME/miniconda3/etc/profile.d/conda.sh
+
+export PATH="$HOME/.cargo/bin:$PATH"
