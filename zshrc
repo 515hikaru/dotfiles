@@ -50,3 +50,6 @@ source "/usr/local/opt/nvm/nvm.sh"
 function peco-nvim {
     nvim "$( find $1 | peco )"
 }
+
+export PATH="$HOME/miniconda3/bin:$PATH"
+. $HOME/miniconda3/etc/profile.d/conda.sh
