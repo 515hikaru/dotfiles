@@ -54,6 +54,19 @@ let g:deoplete#sources#clang#clang_header =  '/usr/local/opt/llvm/lib/clang/'
 '''
 
 [[plugins]]
+repo = 'kana/vim-operator-user'
+
+[[plugins]]
+repo = 'rhysd/vim-clang-format'
+on_i = 1
+on_ft = 'cpp'
+hook_source = '''
+" if you install vim-operator-user
+autocmd FileType c,cpp,objc map <buffer><Leader>x <Plug>(operator-clang-format)
+autocmd FileType c,cpp ClangFormatAutoEnable
+'''
+
+[[plugins]]
 repo = 'plasticboy/vim-markdown'
 on_ft = 'markdown'
 
