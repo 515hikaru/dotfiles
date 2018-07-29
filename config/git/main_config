@@ -1,0 +1,6 @@
+[user]
+	name = 515hikaru
+	email = 12kojima.takahiro@gmail.com
+[Include]
+    path = ~/dotfiles/config/git/aliases
+# vim: ft=gitconfig
