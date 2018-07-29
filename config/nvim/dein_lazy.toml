@@ -43,6 +43,28 @@ repo = 'zchee/deoplete-go'
 on_i = 1
 on_ft = 'go'
 
+[[plugins]]
+repo = 'zchee/deoplete-clang'
+on_i = 1
+on_ft = 'cpp'
+depends = ['deoplete.nvim']
+hook_source = '''
+let g:deoplete#sources#clang#libclang_path = '/usr/local/Cellar/llvm/6.0.1/lib/libclang.dylib'
+let g:deoplete#sources#clang#clang_header =  '/usr/local/opt/llvm/lib/clang/'
+'''
+
+[[plugins]]
+repo = 'kana/vim-operator-user'
+
+[[plugins]]
+repo = 'rhysd/vim-clang-format'
+on_i = 1
+on_ft = 'cpp'
+hook_source = '''
+" if you install vim-operator-user
+autocmd FileType c,cpp,objc map <buffer><Leader>x <Plug>(operator-clang-format)
+autocmd FileType c,cpp ClangFormatAutoEnable
+'''
 
 [[plugins]]
 repo = 'plasticboy/vim-markdown'

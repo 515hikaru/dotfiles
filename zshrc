@@ -55,4 +55,5 @@ export PATH="$HOME/miniconda3/bin:$PATH"
 . $HOME/miniconda3/etc/profile.d/conda.sh
 
 export PATH="$HOME/.cargo/bin:$PATH"
-eval "$(hub alias -s)"
+# eval "$(hub alias -s)"
+export PATH="/usr/local/opt/llvm/bin:$PATH"
