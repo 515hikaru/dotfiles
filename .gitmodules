@@ -1,3 +1,6 @@
 [submodule "config/vim/pack/plugins/start/molokai"]
 	path = config/vim/pack/plugins/start/molokai
 	url = https://github.com/tomasr/molokai.git
+[submodule "vim-go"]
+	path = config/vim/pack/plugins/start/vim-go
+	url = https://github.com/fatih/vim-go.git
