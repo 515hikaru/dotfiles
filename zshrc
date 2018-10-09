@@ -37,7 +37,7 @@ export XDG_CONFIG="$HOME/.config"
 # stack
 export PATH="$HOME/.local/bin:$PATH"
 # golang
-export GOPATH=$HOME/go
+export GOPATH=$HOME/dev/go
 export PATH=$PATH:$GOPATH/bin
 # python
 export PATH="$HOME/Library/Python/3.6/bin:$PATH"
