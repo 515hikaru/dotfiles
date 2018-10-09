@@ -7,3 +7,6 @@
 [submodule "config/vim/pack/plugins/start/surround"]
 	path = config/vim/pack/plugins/start/surround
 	url = https://tpope.io/vim/surround.git
+[submodule "config/vim/pack/plugins/start/rust.vim"]
+	path = config/vim/pack/plugins/start/rust.vim
+	url = https://github.com/rust-lang/rust.vim
