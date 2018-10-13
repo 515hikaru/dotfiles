@@ -19,7 +19,7 @@ filetype plugin indent on
 " Toggle を <C-n> にバインド
 map <C-n> :NERDTreeToggle<CR>
 " Vim 起動時に自動でファイルビューアーを開く
-autocmd vimenter * NERDTree
+autocmd vimenter * NERDTree | wincmd p
 
 colorscheme molokai
 set t_Co=256
