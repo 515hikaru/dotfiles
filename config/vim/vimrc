@@ -14,5 +14,12 @@ set wrap
 set backspace=indent,eol,start
 syntax on
 filetype plugin indent on
+
+" NERDTree
+" Toggle を <C-n> にバインド
+map <C-n> :NERDTreeToggle<CR>
+" Vim 起動時に自動でファイルビューアーを開く
+autocmd vimenter * NERDTree
+
 colorscheme molokai
 set t_Co=256
