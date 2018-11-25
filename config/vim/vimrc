@@ -27,6 +27,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 autocmd FileType go setlocal noexpandtab shiftwidth=8 softtabstop=8
 " config for python
 set omnifunc=pythoncomplete#Complete
+" config for rustfmt
+let g:rustfmt_autosave = 1
 
 colorscheme molokai
 set t_Co=256
