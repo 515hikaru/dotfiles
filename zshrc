@@ -6,6 +6,7 @@ zstyle ':completion:*' menu select=long-list select=0
 zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
 zstyle :compinstall filename '/Users/hikaru/.zshrc'
 fpath=(/usr/local/share/zsh-completions $fpath)
+fpath+=~/.zfunc
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
