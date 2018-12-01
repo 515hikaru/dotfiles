@@ -13,3 +13,9 @@
 [submodule "nerdtree"]
 	path = config/vim/pack/plugins/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "config/vim/pack/plugins/start/vim-terraform"]
+	path = config/vim/pack/plugins/start/vim-terraform
+	url = https://github.com/hashivim/vim-terraform.git
+[submodule "config/vim/pack/plugins/start/vim-racer"]
+	path = config/vim/pack/plugins/start/vim-racer
+	url = https://github.com/racer-rust/vim-racer
