@@ -19,3 +19,6 @@
 [submodule "config/vim/pack/plugins/start/vim-racer"]
 	path = config/vim/pack/plugins/start/vim-racer
 	url = https://github.com/racer-rust/vim-racer
+[submodule "config/vim/pack/plugins/start/syntastic"]
+	path = config/vim/pack/plugins/start/syntastic
+	url = https://github.com/vim-syntastic/syntastic.git
