@@ -2,22 +2,22 @@
 	path = config/vim/pack/plugins/start/molokai
 	url = https://github.com/tomasr/molokai.git
 [submodule "vim-go"]
-	path = config/vim/pack/plugins/start/vim-go
+	path = config/vim/pack/plugins/opt/vim-go
 	url = https://github.com/fatih/vim-go.git
 [submodule "config/vim/pack/plugins/start/surround"]
 	path = config/vim/pack/plugins/start/surround
 	url = https://tpope.io/vim/surround.git
 [submodule "config/vim/pack/plugins/start/rust.vim"]
-	path = config/vim/pack/plugins/start/rust.vim
+	path = config/vim/pack/plugins/opt/rust.vim
 	url = https://github.com/rust-lang/rust.vim
 [submodule "nerdtree"]
 	path = config/vim/pack/plugins/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule "config/vim/pack/plugins/start/vim-terraform"]
-	path = config/vim/pack/plugins/start/vim-terraform
+	path = config/vim/pack/plugins/opt/vim-terraform
 	url = https://github.com/hashivim/vim-terraform.git
 [submodule "config/vim/pack/plugins/start/vim-racer"]
-	path = config/vim/pack/plugins/start/vim-racer
+	path = config/vim/pack/plugins/opt/vim-racer
 	url = https://github.com/racer-rust/vim-racer
 [submodule "config/vim/pack/plugins/start/syntastic"]
 	path = config/vim/pack/plugins/start/syntastic
