@@ -52,9 +52,10 @@ function peco-nvim {
     nvim "$( find $1 | peco )"
 }
 
-export PATH="$HOME/miniconda3/bin:$PATH"
+# export PATH="$HOME/miniconda3/bin:$PATH"
 . $HOME/miniconda3/etc/profile.d/conda.sh
 
 export PATH="$HOME/.cargo/bin:$PATH"
 # eval "$(hub alias -s)"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
+source ~/google-cloud-sdk/path.zsh.inc
